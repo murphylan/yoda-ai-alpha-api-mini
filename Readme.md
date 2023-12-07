@@ -1,7 +1,7 @@
 # Yoda AI V2: Your Wise Companion
 ## ~Supporting Both Image and Text Generation
 
-<img src="./showcase/ai.png" width="100%" />
+<img src="./showcase/ai.jpeg" width="100%" height="360px" style="border-radius:8px" />
 
 Welcome to Yoda AI, your ultimate AI companion! Yoda is designed to be your go-to solution for a wide range of tasks, from answering questions and providing insights, offering assistance and entertainment to image generation (in the main version, PS This is private). In this document, we'll introduce you to the exciting world of Yoda AI and guide you through getting started.
 
