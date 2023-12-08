@@ -5,6 +5,7 @@ from dotenv import load_dotenv, dotenv_values
 from pymongo import MongoClient, errors
 from pydantic import BaseModel
 from .text import TextPrompt
+from .request_data import PromptBody
 
 # fastapi router
 router = APIRouter()
@@ -17,12 +18,11 @@ all_values = dotenv_values(".env")
 # print(all_values)
 
 
-class Prompt(BaseModel):
-    prompt: str
 
-
+# generate text prompts
+# expects a prompt in the post body
 @router.post("/text/prompt")
-def prompt(prompt: Prompt):
+def prompt(prompt: PromptBody):
     
     # get prompt answer
     prompt_reply = TextPrompt.generate(prompt=prompt.prompt)
