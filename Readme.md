@@ -37,18 +37,29 @@ Yoda AI is a cutting-edge artificial intelligence designed to enhance your daily
 # Production Recommendations
 For a production environment, I would recommend that devs do a deep dive into the available models to select one that best fits their requirements, deploy them, do thorough performance tests, fine tune them for good performance.
 
-
 # Running
 To run this server, you need to clone the repo to your local environment. 
 
 ```sh
-git clone https://github.com/efenstakes/yoda-alpha yoda
+git clone git@github.com:murphylan/yoda-ai-alpha-api-mini.git yoda
 ```
 
 Navigate to the folder.
 
 ```sh
 cd ./yoda
+```
+
+Create a Python Environment
+
+```sh
+python -m venv venv
+```
+
+Activate Python Environment
+
+```sh
+source venv/bin/activate
 ```
 
 Install dependencies
