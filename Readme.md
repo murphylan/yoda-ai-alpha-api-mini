@@ -79,11 +79,15 @@ python3 main.py
 ```
 
 
-Happy building :(.
 
-## Extras
-I intent to build a similar API to this in Golang and Node.js. You will be able to find it here in my github in time.
+## Test
 
+```sh
+murphylan@MacBook-Pro ~ % curl -X POST "http://127.0.0.1:8000/text/prompt" \
+-H "Content-Type: application/json" \
+-d '{
+    "prompt": "who are you"
+}'
 
-## Contact
-If you wish to contact me, use my email efenstakes101@gmail.com.
+{"reply":"\nI am Amazon Titan, a large language model built by AWS.","prompt":{"prompt":"who are you"}}```
+
